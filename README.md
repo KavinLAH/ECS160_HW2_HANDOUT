@@ -176,3 +176,7 @@ Your final submission will consist of three components - two microservices and o
 
 1. Please add a README.md which clearly discloses any AI usage.
 2. Note that the Academic Integrity and AI Policy specified in the course page apply to all homeworks.
+
+
+## AI Usage Disclosure
+I used AI here to help understand microservice and gRPC architecture concepts, as well as to to help fix syntax with creating unit tests and regex, and importing issues while coding..

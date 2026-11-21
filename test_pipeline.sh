@@ -65,6 +65,10 @@ trap cleanup EXIT
 # ─────────────────────────────────────────────
 echo "--- Environment Setup ---"
 
+if [ -f "$SCRIPT_DIR/.env" ]; then
+    export $(grep -v "^#" "$SCRIPT_DIR/.env" | xargs)
+fi
+
 if [ -z "$GOOGLE_API_KEY" ]; then
     echo "  ERROR: GOOGLE_API_KEY is not set. Set it before running."
     exit 1
